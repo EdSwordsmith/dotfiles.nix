@@ -27,6 +27,18 @@
     ];
   };
 
+  programs.git = {
+    enable = true;
+    userName = "Eduardo Espadeiro";
+    userEmail = "eduardo.espadeiro@tecnico.ulisboa.pt";
+    extraConfig = {
+      color.ui = true;
+      pull.rebase = true;
+      init.defaultBranch = "main";
+      url."git@github.com".pushinsteadOf = "https://github.com/";
+    };
+  };
+
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
   # when a new Home Manager release introduces backwards
