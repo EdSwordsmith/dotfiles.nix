@@ -7,8 +7,6 @@
   home.homeDirectory = "/Users/eduardoespadeiro";
 
   home.packages = [
-    pkgs.bat
-    pkgs.exa
     pkgs.git
     pkgs.gcc
     pkgs.neofetch
@@ -51,6 +49,12 @@
   };
 
   programs.fish.enable = true;
+  programs.bat.enable = true;
+
+  programs.exa = {
+    enable = true;
+    enableAliases = true;
+  };
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
