@@ -10,9 +10,11 @@
     packages = with pkgs; [
       git
       gcc
+      rustup
       neofetch
       tmux
       wget
+      ripgrep
     ];
 
     sessionVariables = {
