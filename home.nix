@@ -10,6 +10,7 @@
     packages = with pkgs; [
       git
       gcc
+      cmake
       rustup
       neofetch
       tmux

@@ -3,8 +3,8 @@
 {
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
-  environment.systemPackages = [
-    pkgs.emacs
+  environment.systemPackages = with pkgs; [
+    emacs
   ];
 
   # Use a custom configuration.nix location.
