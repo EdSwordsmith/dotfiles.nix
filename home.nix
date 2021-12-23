@@ -12,6 +12,7 @@
       gcc
       cmake
       rustup
+      rust-analyzer
       neofetch
       tmux
       wget
