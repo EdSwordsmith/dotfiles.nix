@@ -17,10 +17,13 @@
       tmux
       wget
       ripgrep
+      glfw
+      pkg-config
     ];
 
-    sessionVariables = {
+    sessionVariables = rec {
       EDITOR = "nvim";
+      PATH = "/Users/eduardoespadeiro/.nix-profile/bin:/run/current-system/sw/bin:/nix/var/nix/profiles/default/bin:$PATH";
     };
 
     # This value determines the Home Manager release that your
@@ -39,6 +42,8 @@
     enable = true;
     viAlias = true;
     vimAlias = true;
+
+    extraConfig = "syntax on";
 
     plugins = with pkgs.vimPlugins; [
       vim-nix
