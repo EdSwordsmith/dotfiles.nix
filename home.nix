@@ -8,7 +8,7 @@
     homeDirectory = "/Users/eduardoespadeiro";
 
     packages = with pkgs; [
-      git
+      gnupg
       gcc
       cmake
       rustup
@@ -63,6 +63,10 @@
     ignores = [
       ".DS_Store"
     ];
+    signing = {
+      signByDefault = true;
+      key = "0CF1C5EAF76639CE034D9A5E686B41F974804CC1";
+    };
   };
 
   programs.starship = {
