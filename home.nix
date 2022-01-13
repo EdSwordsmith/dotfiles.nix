@@ -84,6 +84,8 @@
     shellAliases = {
       doom = "~/.emacs.d/bin/doom";
       nshell = "nix-shell --command $SHELL";
+      vi = "~/.nix-profile/bin/vi";
+      vim = "~/.nix-profile/bin/vim";
     };
   };
 
