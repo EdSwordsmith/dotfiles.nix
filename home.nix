@@ -42,8 +42,6 @@
     viAlias = true;
     vimAlias = true;
 
-    extraConfig = "syntax on";
-
     plugins = with pkgs.vimPlugins; [
       vim-nix
     ];
